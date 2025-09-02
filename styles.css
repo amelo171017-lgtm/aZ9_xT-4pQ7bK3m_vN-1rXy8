@@ -86,11 +86,12 @@ h1 {
   padding: 16px 20px;
   font-size: 16px;
   border: 2px solid rgba(71, 85, 105, 0.5);
-  border-radius: 12px;
+  border-radius: 8px;
   background: rgba(51, 65, 85, 0.6);
   color: #f8fafc;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
+  min-height: 52px;
 }
 
 #access-code:focus {
@@ -114,13 +115,14 @@ h1 {
   background: linear-gradient(135deg, #3b82f6, #1d4ed8);
   color: #fff;
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
   font-weight: 700;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
+  min-width: 120px;
 }
 
 #enter-btn::before {
@@ -169,12 +171,13 @@ h1 {
   background: transparent;
   border: 1px solid rgba(71, 85, 105, 0.5);
   color: #94a3b8;
-  padding: 8px 16px;
-  border-radius: 8px;
+  padding: 12px 20px;
+  border-radius: 6px;
   cursor: pointer;
   font-size: 14px;
   transition: all 0.3s ease;
-  margin-top: 8px;
+  margin-top: 12px;
+  min-width: 140px;
 }
 
 .code-toggle:hover {
@@ -420,12 +423,103 @@ h1 {
 
 /* Mobile - ajustes específicos */
 @media (max-width: 767px) {
+  .container {
+    padding: 16px;
+    gap: 20px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  #code-form {
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    gap: 12px;
+    grid-template-columns: 1fr;
+  }
+  
+  #access-code {
+    padding: 14px 18px;
+    font-size: 15px;
+    min-height: 48px;
+    border-radius: 6px;
+  }
+  
+  #enter-btn {
+    padding: 14px 20px;
+    font-size: 15px;
+    min-width: 100px;
+    border-radius: 6px;
+    justify-self: center;
+  }
+  
+  .code-toggle {
+    padding: 10px 16px;
+    font-size: 13px;
+    min-width: 120px;
+    border-radius: 5px;
+    justify-self: center;
+  }
+  
   .subject-section .actions {
     flex-direction: column;
   }
   
   .action-btn {
     width: 100%;
+  }
+}
+
+/* Tablet - ajustes intermediários */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    padding: 20px;
+  }
+  
+  #code-form {
+    max-width: 520px;
+    padding: 22px;
+  }
+  
+  #access-code {
+    padding: 15px 19px;
+    min-height: 50px;
+  }
+  
+  #enter-btn {
+    padding: 15px 22px;
+    min-width: 110px;
+  }
+  
+  .code-toggle {
+    padding: 11px 18px;
+    min-width: 130px;
+  }
+}
+
+/* Desktop - ajustes para telas grandes */
+@media (min-width: 1024px) {
+  #code-form {
+    max-width: 560px;
+    padding: 28px;
+  }
+  
+  #access-code {
+    padding: 18px 22px;
+    min-height: 54px;
+  }
+  
+  #enter-btn {
+    padding: 18px 28px;
+    min-width: 130px;
+  }
+  
+  .code-toggle {
+    padding: 14px 24px;
+    min-width: 150px;
   }
 }
 
