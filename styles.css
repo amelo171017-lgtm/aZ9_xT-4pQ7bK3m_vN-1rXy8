@@ -165,7 +165,6 @@ h1 {
   75% { transform: translateX(5px); }
 }
 
-/* Botão para ver código */
 .code-toggle {
   grid-column: 1 / -1;
   background: transparent;
@@ -186,12 +185,10 @@ h1 {
   background: rgba(96, 165, 250, 0.1);
 }
 
-/* Estilos para o conteúdo dinâmico */
 .dynamic-content {
   width: 100%;
   margin: 0 auto;
   padding: 20px;
-  /* O JavaScript controla o grid agora */
 }
 
 .subject-section {
@@ -300,7 +297,6 @@ h1 {
   border: 0;
 }
 
-/* Modal com animações */
 .modal {
   position: fixed;
   inset: 0;
@@ -404,7 +400,6 @@ h1 {
   background: #0f172a;
 }
 
-/* Animações de transição entre telas */
 #initial-screen, #second-screen {
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -419,9 +414,6 @@ h1 {
   transform: translateY(0);
 }
 
-/* ===== RESPONSIVIDADE ===== */
-
-/* Mobile - ajustes específicos */
 @media (max-width: 767px) {
   .container {
     padding: 16px;
@@ -473,7 +465,6 @@ h1 {
   }
 }
 
-/* Tablet - ajustes intermediários */
 @media (min-width: 768px) and (max-width: 1023px) {
   .container {
     padding: 20px;
@@ -500,7 +491,6 @@ h1 {
   }
 }
 
-/* Desktop - ajustes para telas grandes */
 @media (min-width: 1024px) {
   #code-form {
     max-width: 560px;
